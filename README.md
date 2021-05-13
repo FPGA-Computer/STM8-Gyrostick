@@ -9,7 +9,7 @@ A simple busy wait was all that was need to make both of them coexist.
 
 # STM8 VUSB
 
-The firmware only USB stack is an unofficial fork from STM8S-VUSB-KEYBOARD at https://github.com/BBS215/STM8S-VUSB-KEYBOARD
+The firmware only USB stack is an unofficial fork from [STM8S-VUSB-KEYBOARD](https://github.com/BBS215/STM8S-VUSB-KEYBOARD)
 
 - Works with current special edition of Cosmic C (4.4.10) and current version of STVD (4.3.12)
 
@@ -20,7 +20,8 @@ The USB stack calibrates the HSI clock while connected to the PC. The calibratio
 [Project page](https://hw-by-design.blogspot.com/2021/05/stm8-gyrostock.html)
 
 
-Licenses: 
+Licenses:
+
 Hardware
 -Creative Common Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 

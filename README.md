@@ -7,6 +7,8 @@ It uses a firmware based USB library on a STM8S003 similar to VUSB and has to li
 There is a long list of STM8 I2C peripheral errata, so I have no choice but to base mine on ST's heavy IRQ code from [AN3281 - STM8 8-bit MCUs I2C optimized examples](https://www.st.com/en/embedded-software/stsw-stm8004.html).
 A simple busy wait was all that was need to make both of them coexist.
 
+[My project page](https://hw-by-design.blogspot.com/2021/05/stm8-gyrostock.html)
+
 # STM8 VUSB
 
 The firmware only USB stack is an unofficial fork from [STM8S-VUSB-KEYBOARD](https://github.com/BBS215/STM8S-VUSB-KEYBOARD)
@@ -15,19 +17,20 @@ The firmware only USB stack is an unofficial fork from [STM8S-VUSB-KEYBOARD](htt
 
 Note: 
 
-The USB stack calibrates the HSI clock while connected to the PC. The calibration is store in EEPROM. It can take a couple of minutes the first time before it functions correctly.
+The USB stack calibrates the HSI clock while connected to the PC. The calibration is store in EEPROM. It may take a couple of minutes the first time before it functions correctly.
 
-[Project page](https://hw-by-design.blogspot.com/2021/05/stm8-gyrostock.html)
-
-
-Licenses:
+#Licenses
 
 Hardware
--Creative Common Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- designed by me.  License under Creative Common Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 Firmware
-- Code written by me: GPL 3.0
-- STM8 USB stack is under GPL-2.0. License is based on work by Github user: BBS215
-- ST STM8 header file and their I2C library are under their own licenses.
+- Code written by me: [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+3rd party firmware used
+- STM8 USB stack is under [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html). It is based on work by [Github user BBS215](https://github.com/BBS215)
+- MPU6050.h header file by Harinadha Reddy Chintalapalli <harinath.ec@gmail.com> is under [MIT license ](https://mit-license.org/)
+- ST STM8 header file under "MCD-ST Liberty SW License Agreement V2" text [here](https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/59/57/63/12/cf/a6/47/65/SLA0044/files/SLA0044.txt/jcr:content/translations/en.SLA0044.txt)
+- I2C library are released as a published app. note by ST MCD Application Team. They can be used by ST STM8 customers.  I modified and cleaned up their code and not claiming copyright.
 
 Initial release.

@@ -1,4 +1,3 @@
-#include "main.h"
 #include "usb.h"
 #include "hardware.h"
 

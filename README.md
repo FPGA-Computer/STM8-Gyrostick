@@ -19,7 +19,7 @@ Note:
 
 The USB stack calibrates the HSI clock while connected to the PC. The calibration is store in EEPROM. It may take a couple of minutes the first time before it functions correctly.
 
-#Licenses
+# Licenses
 
 Hardware
 - designed by me.  License under Creative Common Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
@@ -33,4 +33,4 @@ Firmware
 - ST STM8 header file under "MCD-ST Liberty SW License Agreement V2" text [here](https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/59/57/63/12/cf/a6/47/65/SLA0044/files/SLA0044.txt/jcr:content/translations/en.SLA0044.txt)
 - I2C library are released as a published app. note by ST MCD Application Team. They can be used by ST STM8 customers.  I modified and cleaned up their code and not claiming copyright.
 
-Initial release.
+Initial release -  WIP.  Hardware working with Windows, but not picked up by Cemu software. Hard to debug the massive amount of Node.JS framework brought in by CEMU without *any* documentations 

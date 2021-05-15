@@ -21,11 +21,10 @@
 #define LENGTH_STRING_DESCRIPTOR 				4
 #define SIZE_STRING_LANGID 							4
 #define SIZE_STRING_VENDOR             	52
-#define SIZE_STRING_PRODUCT            	20
+#define SIZE_STRING_PRODUCT            	30
 #define SIZE_STRING_SERIAL             	10
 
 // HID_ReportDescriptor is used for the report
-//#define SIZE_REPORT_DESCRIPTOR 					40
 #define SIZE_REPORT_DESCRIPTOR 					49	
 ///////////////////////////////////////////////////////////;
 

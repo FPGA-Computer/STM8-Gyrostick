@@ -1,0 +1,482 @@
+
+Map of Debug\usb_motion.sm8 from link file Debug\usb_motion.lkf - Fri May 14 17:19:31 2021
+
+
+                               --------
+                               Segments
+                               --------
+
+start 00008080 end 0000819b length   283 segment .utext
+start 0000819b end 0000827e length   227 segment .const
+start 00008294 end 000092eb length  4183 segment .text
+start 00004000 end 00004000 length     0 segment .eeprom
+start 00000000 end 0000000e length    14 segment .bsct, initialized
+start 00008286 end 00008294 length    14 segment .bsct, from
+start 0000000e end 00000097 length   137 segment .ubsct
+start 00000097 end 00000097 length     0 segment .bit
+start 00000097 end 00000097 length     0 segment .share
+start 00000100 end 00000100 length     0 segment .data
+start 00000100 end 00000100 length     0 segment .bss
+start 00000000 end 000005b6 length  1462 segment .info.
+start 00000000 end 00002116 length  8470 segment .debug
+start 00008000 end 00008080 length   128 segment .const
+start 0000827e end 00008286 length     8 segment .init
+
+
+                               -------
+                               Modules
+                               -------
+
+C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8:
+start 00008294 end 000082e4 length    80 section .text
+start 00000100 end 00000100 length     0 section .bss
+start 0000000e end 0000000e length     0 section .ubsct
+start 00000000 end 00000034 length    52 section .info.
+
+Debug\motion.o:
+start 000082e4 end 00008461 length   381 section .text
+start 00000000 end 00000002 length     2 section .bsct
+start 0000000e end 0000002a length    28 section .ubsct
+start 00000000 end 000002c7 length   711 section .debug
+start 00000034 end 000000ae length   122 section .info.
+start 0000819b end 000081ad length    18 section .const
+
+Debug\i2c.o:
+start 00008461 end 0000866f length   526 section .text
+start 0000002a end 0000002f length     5 section .ubsct
+start 000002c7 end 0000064d length   902 section .debug
+start 000000ae end 00000125 length   119 section .info.
+
+Debug\hardware.o:
+start 0000866f end 00008761 length   242 section .text
+start 0000064d end 00000911 length   708 section .debug
+start 00000125 end 000001a1 length   124 section .info.
+
+Debug\main.o:
+start 00008761 end 0000880f length   174 section .text
+start 00000911 end 00000cdb length   970 section .debug
+start 000001a1 end 00000219 length   120 section .info.
+
+Debug\usb.o:
+start 0000880f end 000090af length  2208 section .text
+start 00000002 end 00000006 length     4 section .bsct
+start 0000002f end 0000008d length    94 section .ubsct
+start 00000cdb end 00001a52 length  3447 section .debug
+start 00000219 end 00000290 length   119 section .info.
+start 000081ad end 000081b5 length     8 section .const
+
+Debug\usb_rx.o:
+start 00001a52 end 00001b53 length   257 section .debug
+start 00000290 end 000002c8 length    56 section .info.
+start 00008080 end 0000819b length   283 section .utext
+
+Debug\usb_tx.o:
+start 000090af end 0000920a length   347 section .text
+start 00001b53 end 00001db8 length   613 section .debug
+start 000002c8 end 00000300 length    56 section .info.
+
+Debug\usb_desc.o:
+start 00000006 end 0000000e length     8 section .bsct
+start 00001db8 end 00001fd3 length   539 section .debug
+start 00000300 end 0000037c length   124 section .info.
+start 000081b5 end 0000827e length   201 section .const
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)itolx.o:
+start 0000920a end 00009218 length    14 section .text
+start 0000037c end 000003ac length    48 section .info.
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lcmp.o:
+start 00009218 end 00009238 length    32 section .text
+start 000003ac end 000003db length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lmul.o:
+start 00009238 end 000092c3 length   139 section .text
+start 000003db end 0000040a length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lneg.o:
+start 000092c3 end 000092d8 length    21 section .text
+start 0000040a end 00000439 length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lreg.o:
+start 0000008d end 00000091 length     4 section .ubsct
+start 00000439 end 00000468 length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)ltor.o:
+start 000092d8 end 000092ea length    18 section .text
+start 00000468 end 00000497 length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)xreg.o:
+start 00000091 end 00000094 length     3 section .ubsct
+start 00000497 end 000004c6 length    47 section .info.
+
+(C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)yreg.o:
+start 00000094 end 00000097 length     3 section .ubsct
+start 000004c6 end 000004f5 length    47 section .info.
+
+Debug\stm8_interrupt_vector.o:
+start 000092ea end 000092eb length     1 section .text
+start 00001fd3 end 00002116 length   323 section .debug
+start 000004f5 end 0000057e length   137 section .info.
+start 00008000 end 00008080 length   128 section .const
+
+
+                             -----------
+                             Stack usage
+                             -----------
+
+Debug\hardware.o:
+_Check_OPTION_BYTE                 6   (4)
+_Delay                             6   (4)
+_FLASH_Data_lock                   2   (2)
+_FLASH_Wait                        2   (2)
+_Init_Hardware                    11   (2)
+_RESET_CHIP                        2   (2)
+_Short_Delay                       2   (2)
+_TIM4_Init                         2   (2)
+
+Debug\i2c.o:
+_I2C_Busy                          2   (2)
+_I2C_Init                          2   (2)
+_I2C_Read                         13   (7)
+_I2C_Write                         6   (6)
+f_I2C_IRQ                     >    9   (9)
+
+Debug\main.o:
+_USB_Class_DeInit_callback         2   (2)
+_USB_Class_Init_callback           2   (2)
+_USB_EP0_RxReady_callback          3   (3)
+_USB_EP1_RxReady_callback          3   (3)
+_USB_Setup_Request_callback       21   (2)
+_main                         >   34   (3)
+
+Debug\motion.o:
+_MPU6050_Init                      9   (3)
+_MPU6050_Scale                    13   (2)
+_Motion_Task                  >   21   (2)
+_UpdateReport                     11   (9)
+
+Debug\stm8_interrupt_vector.o:
+f_Default_IRQ_Handler         >    6   (6)
+
+Debug\usb.o:
+_USB_Device_Request               23   (4)
+_USB_Handle_GetDescriptor         25   (6)
+_USB_Handle_Standard_Request      27   (4)
+_USB_Init                          6   (2)
+_USB_NRZI_RX_Decode               12   (12)
+_USB_Reset                         4   (2)
+_USB_Send_Data                    19   (11)
+_USB_Send_STALL                    3   (3)
+_USB_connect                       2   (2)
+_USB_disconnect                    2   (2)
+_USB_loop                         31   (4)
+_USB_slow_loop                     6   (2)
+_usb_calc_crc16                    8   (8)
+_usb_rx_ok                    >    4   (4)
+
+Stack size: 43
+
+
+                              ---------
+                              Call tree
+                              ---------
+   1 > _Motion_Task: (2)
+   2      + _Delay: (4)
+   3      |    + _Short_Delay: (2)
+          | 
+   4      + _I2C_Busy: (2)
+   5      + _I2C_Read: (7)
+   6      |    + _Delay --> 2
+   7      |    + _I2C_Busy --> 4
+   8      |    + _I2C_Write: (6)
+          | 
+   9      + _MPU6050_Scale: (2)
+  10      |    + _UpdateReport: (9)
+          | 
+  11      + _USB_Send_Data: (11)
+  12      |    + _usb_calc_crc16: (8)
+          | 
+       
+  13 > _ll_usb_rx: (0)
+
+  14 > _main: (3)
+  15      + _Delay --> 2
+  16      + _I2C_Busy --> 4
+  17      + _I2C_Read --> 5
+  18      + _Init_Hardware: (2)
+  19      |    + _Check_OPTION_BYTE: (4)
+  20      |    |    + _FLASH_Data_lock: (2)
+  21      |    |    + _FLASH_Wait: (2)
+  22      |    |    + _RESET_CHIP: (2)
+          |    | 
+  23      |    + _Delay --> 2
+  24      |    + _I2C_Init: (2)
+  25      |    + _MPU6050_Init: (3)
+  26      |    |    + _I2C_Busy --> 4
+  27      |    |    + _I2C_Write --> 8
+          |    | 
+  28      |    + _TIM4_Init: (2)
+  29      |    + _USB_Init: (2)
+  30      |    |    + _USB_Reset: (2)
+  31      |    |    |    + _USB_Class_DeInit_callback: (2)
+          |    |    | 
+          |    | 
+  32      |    + _USB_connect: (2)
+  33      |    + _USB_disconnect: (2)
+          | 
+  34      + _MPU6050_Scale --> 9
+  35      + _USB_Send_Data --> 11
+  36      + _USB_loop: (4)
+  37      |    + _USB_EP0_RxReady_callback: (3)
+  38      |    + _USB_EP1_RxReady_callback: (3)
+  39      |    + _USB_Handle_GetDescriptor: (6)
+  40      |    |    + _USB_Send_Data --> 11
+  41      |    |    + _USB_Send_STALL: (3)
+          |    | 
+  42      |    + _USB_Handle_Standard_Request: (4)
+  43      |    |    + _USB_Device_Request: (4)
+  44      |    |    |    + _USB_Class_DeInit_callback --> 31
+  45      |    |    |    + _USB_Class_Init_callback: (2)
+  46      |    |    |    + _USB_Send_Data --> 11
+  47      |    |    |    + _USB_Send_STALL --> 41
+          |    |    | 
+  48      |    |    + _USB_Send_STALL --> 41
+  49      |    |    + _USB_Setup_Request_callback: (2)
+  50      |    |    |    + _USB_Send_Data --> 11
+          |    |    | 
+          |    | 
+  51      |    + _USB_NRZI_RX_Decode: (12)
+  52      |    + _USB_Reset --> 30
+  53      |    + _USB_Send_STALL --> 41
+  54      |    + _USB_Setup_Request_callback --> 49
+          | 
+  55      + _USB_slow_loop: (2)
+  56      |    + _FLASH_Data_lock --> 20
+  57      |    + _USB_Reset --> 30
+  58      |    + _USB_connect --> 32
+  59      |    + _USB_disconnect --> 33
+          | 
+       
+  60 > _usb_rx_ok: (4)
+
+  61 > f_Default_IRQ_Handler: (6)
+
+  62 > f_I2C_IRQ: (9)
+
+  63   _Check_OPTION_BYTE --> 19
+
+  64   _Delay --> 2
+
+  65   _FLASH_Data_lock --> 20
+
+  66   _FLASH_Wait --> 21
+
+  67   _I2C_Busy --> 4
+
+  68   _I2C_Init --> 24
+
+  69   _I2C_Read --> 5
+
+  70   _I2C_Write --> 8
+
+  71   _Init_Hardware --> 18
+
+  72   _MPU6050_Init --> 25
+
+  73   _MPU6050_Scale --> 9
+
+  74   _RESET_CHIP --> 22
+
+  75   _Short_Delay --> 3
+
+  76   _TIM4_Init --> 28
+
+  77   _USB_Class_DeInit_callback --> 31
+
+  78   _USB_Class_Init_callback --> 45
+
+  79   _USB_Device_Request --> 43
+
+  80   _USB_EP0_RxReady_callback --> 37
+
+  81   _USB_EP1_RxReady_callback --> 38
+
+  82   _USB_Handle_GetDescriptor --> 39
+
+  83   _USB_Handle_Standard_Request --> 42
+
+  84   _USB_Init --> 29
+
+  85   _USB_NRZI_RX_Decode --> 51
+
+  86   _USB_Reset --> 30
+
+  87   _USB_Send_Data --> 11
+
+  88   _USB_Send_STALL --> 41
+
+  89   _USB_Setup_Request_callback --> 49
+
+  90   _USB_connect --> 32
+
+  91   _USB_disconnect --> 33
+
+  92   _USB_loop --> 36
+
+  93   _USB_slow_loop --> 55
+
+  94   _UpdateReport --> 10
+
+  95   _usb_calc_crc16 --> 12
+
+
+
+                               -------
+                               Symbols
+                               -------
+
+_Check_OPTION_BYTE               000086af   defined in Debug\hardware.o section .text
+_Delay                           0000874f   defined in Debug\hardware.o section .text
+                                            used in Debug\motion.o Debug\i2c.o
+                                                    Debug\main.o
+_FLASH_Data_lock                 00008695   defined in Debug\hardware.o section .text
+                                            used in Debug\usb.o
+_FLASH_Wait                      000086a7   defined in Debug\hardware.o section .text
+_HID_ReportDescriptor            0000824d   defined in Debug\usb_desc.o section .const
+                                            used in Debug\usb.o
+_I2C_Busy                        0000865e   defined in Debug\i2c.o section .text
+                                            used in Debug\motion.o Debug\main.o
+_I2C_Init                        00008461   defined in Debug\i2c.o section .text
+                                            used in Debug\hardware.o
+_I2C_Read                        000085cd   defined in Debug\i2c.o section .text
+                                            used in Debug\motion.o Debug\main.o
+_I2C_Write                       00008623   defined in Debug\i2c.o section .text
+                                            used in Debug\motion.o
+_Init_Hardware                   0000866f   defined in Debug\hardware.o section .text
+                                            used in Debug\main.o
+_MPU6050_Init                    000082e4   defined in Debug\motion.o section .text
+                                            used in Debug\hardware.o
+_MPU6050_InitValues              0000819b   defined in Debug\motion.o section .const
+_MPU6050_Regs                    0000000e   defined in Debug\motion.o section .ubsct
+                                            used in Debug\main.o
+_MPU6050_Scale                   00008365   defined in Debug\motion.o section .text
+                                            used in Debug\main.o
+_MPU6050_State                   00000001   defined in Debug\motion.o section .bsct, initialized
+                                            used in Debug\main.o
+_Motion_Task                     000083fe   defined in Debug\motion.o section .text
+_RESET_CHIP                      0000868f   defined in Debug\hardware.o section .text
+_ReportID                        00000000   defined in Debug\motion.o section .bsct, initialized
+                                            used in Debug\main.o
+_Report_Acc                      00000023   defined in Debug\motion.o section .ubsct
+                                            used in Debug\main.o
+_Report_Gyro                     0000001c   defined in Debug\motion.o section .ubsct
+                                            used in Debug\main.o
+_Short_Delay                     00008748   defined in Debug\hardware.o section .text
+_String_LangID                   000081e9   defined in Debug\usb_desc.o section .const
+_String_Product                  00008221   defined in Debug\usb_desc.o section .const
+_String_Serial                   0000823f   defined in Debug\usb_desc.o section .const
+_String_Vendor                   000081ed   defined in Debug\usb_desc.o section .const
+_TIM4_Init                       0000873b   defined in Debug\hardware.o section .text
+_USB_Class_DeInit_callback       00008768   defined in Debug\main.o section .text
+                                            used in Debug\usb.o
+_USB_Class_Init_callback         00008762   defined in Debug\main.o section .text
+                                            used in Debug\usb.o
+_USB_Device_Request              00008d1e   defined in Debug\usb.o section .text
+_USB_EP0_RxReady_callback        00008761   defined in Debug\main.o section .text
+                                            used in Debug\usb.o
+_USB_EP1_RxReady_callback        00008786   defined in Debug\main.o section .text
+                                            used in Debug\usb.o
+_USB_Handle_GetDescriptor        00008ed0   defined in Debug\usb.o section .text
+_USB_Handle_Standard_Request     00008e99   defined in Debug\usb.o section .text
+_USB_Init                        0000883a   defined in Debug\usb.o section .text
+                                            used in Debug\hardware.o
+_USB_NRZI_RX_Decode              00008c90   defined in Debug\usb.o section .text
+_USB_Reset                       0000880f   defined in Debug\usb.o section .text
+_USB_Send_Data                   00008a8d   defined in Debug\usb.o section .text
+                                            used in Debug\motion.o Debug\main.o
+_USB_Send_STALL                  00008c67   defined in Debug\usb.o section .text
+_USB_Setup_Request_callback      0000876a   defined in Debug\main.o section .text
+                                            used in Debug\usb.o
+_USB_String_Descriptors          00000006   defined in Debug\usb_desc.o section .bsct, initialized
+                                            used in Debug\usb.o
+_USB_String_Descriptors_Length   00008249   defined in Debug\usb_desc.o section .const
+                                            used in Debug\usb.o
+_USB_connect                     00008874   defined in Debug\usb.o section .text
+                                            used in Debug\hardware.o
+_USB_disconnect                  00008879   defined in Debug\usb.o section .text
+                                            used in Debug\hardware.o
+_USB_loop                        00008fad   defined in Debug\usb.o section .text
+                                            used in Debug\main.o
+_USB_slow_loop                   0000903d   defined in Debug\usb.o section .text
+                                            used in Debug\main.o
+_UpdateReport                    00008311   defined in Debug\motion.o section .text
+__endmem                         000001ff   defined in command file
+                                            *** not used ***
+__endzp                          00000097   defined in command file section .ubsct
+                                            used in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8
+__idesc__                        0000827e   defined in linker section .init
+                                            used in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8
+__memory                         00000100   defined in command file section .bss
+                                            used in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8
+__stack                          000003ff   defined in command file
+                                            used in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8
+__startmem                       00000100   defined in command file section .bss
+                                            *** not used ***
+__stext                          00008294   defined in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8 section .text
+                                            used in Debug\stm8_interrupt_vector.o
+__vectab                         00008000   defined in Debug\stm8_interrupt_vector.o section .const
+_exit                            000082e2   defined in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8 section .text
+_i2c_drv                         0000002a   defined in Debug\i2c.o section .ubsct
+_ll_usb_rx                       00008149   defined in Debug\usb_rx.o section .utext
+                                            used in Debug\stm8_interrupt_vector.o
+_ll_usb_rx_buffer                00000033   defined in Debug\usb.o section .ubsct
+                                            used in Debug\usb_rx.o
+_ll_usb_rx_count                 0000002f   defined in Debug\usb.o section .ubsct
+                                            used in Debug\usb_rx.o
+_ll_usb_tx                       000091cc   defined in Debug\usb_tx.o section .text
+                                            used in Debug\usb.o
+_ll_usb_tx_buffer_pointer        00000031   defined in Debug\usb.o section .ubsct
+                                            used in Debug\usb_tx.o
+_ll_usb_tx_count                 00000030   defined in Debug\usb.o section .ubsct
+                                            used in Debug\usb_tx.o
+_main                            00008787   defined in Debug\main.o section .text
+                                            used in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8
+_p_HSI_TRIMING_DONE              00000004   defined in Debug\usb.o section .bsct, initialized
+_p_HSI_TRIM_VAL                  00000002   defined in Debug\usb.o section .bsct, initialized
+_usb                             00000043   defined in Debug\usb.o section .ubsct
+                                            used in Debug\motion.o Debug\main.o
+_usb_calc_crc16                  00008a24   defined in Debug\usb.o section .text
+_usb_configuration_descriptor    000081c7   defined in Debug\usb_desc.o section .const
+                                            used in Debug\usb.o
+_usb_device_descriptor           000081b5   defined in Debug\usb_desc.o section .const
+                                            used in Debug\usb.o
+_usb_rx_ok                       00008882   defined in Debug\usb.o section .text
+                                            used in Debug\usb_rx.o
+c_itolx                          0000920a   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)itolx.o section .text
+                                            used in Debug\motion.o
+c_lcmp                           00009218   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lcmp.o section .text
+                                            used in Debug\motion.o
+c_lmul                           00009238   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lmul.o section .text
+                                            used in Debug\motion.o
+c_lmulc                          00009240   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lmul.o section .text
+                                            *** not used ***
+c_lneg                           000092c3   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lneg.o section .text
+                                            used in Debug\motion.o
+c_lreg                           0000008d   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lreg.o section .ubsct
+                                            used in Debug\motion.o
+                                                    (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)itolx.o
+                                                    (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lcmp.o
+                                                    (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lmul.o
+                                                    (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lneg.o
+                                                    (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)ltor.o
+c_ltor                           000092d8   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)ltor.o section .text
+                                            used in Debug\motion.o
+c_x                              00000091   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)xreg.o section .ubsct
+                                            used in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8
+                                                    (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)lmul.o
+c_y                              00000094   defined in (C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\libm0.sm8)yreg.o section .ubsct
+                                            used in C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\lib\crtsi0.sm8
+                                                    Debug\usb.o
+f_Default_IRQ_Handler            000092ea   defined in Debug\stm8_interrupt_vector.o section .text
+f_I2C_IRQ                        00008480   defined in Debug\i2c.o section .text
+                                            used in Debug\stm8_interrupt_vector.o

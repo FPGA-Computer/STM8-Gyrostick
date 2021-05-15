@@ -4652,6 +4652,7 @@ Attribution 4.0 International License.</text>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="U3" library="misc pcb" deviceset="MPU6050" device=""/>
 <part name="LICENSE1" library="Misc logo" deviceset="CC-BY" device="50%"/>
+<part name="R4" library="ipc-7351-resistor" deviceset="RESISTOR_" device="1206" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -4713,9 +4714,10 @@ CC BY 4.0</text>
 <instance part="SUPPLY10" gate="GND" x="152.4" y="66.04"/>
 <instance part="SUPPLY7" gate="+3.3V" x="99.06" y="127"/>
 <instance part="H1" gate="G$1" x="213.36" y="93.98"/>
-<instance part="SUPPLY9" gate="GND" x="205.74" y="114.3"/>
+<instance part="SUPPLY9" gate="GND" x="205.74" y="106.68"/>
 <instance part="U3" gate="G$1" x="223.52" y="139.7"/>
 <instance part="LICENSE1" gate="G$1" x="132.08" y="5.08"/>
+<instance part="R4" gate="G$1" x="205.74" y="114.3" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4770,9 +4772,7 @@ CC BY 4.0</text>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
-<wire x1="210.82" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="149.86" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -4964,6 +4964,14 @@ CC BY 4.0</text>
 <pinref part="U2" gate="G$1" pin="PA3/!NSS"/>
 <wire x1="121.92" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
 <label x="109.22" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="210.82" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="149.86" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

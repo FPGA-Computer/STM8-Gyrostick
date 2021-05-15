@@ -28,13 +28,42 @@ void MPU6050_Init(void);
 void MPU6050_Scale(void);
 
 #define MPU6050_REGSIZE (MPU6050_RA_GYRO_ZOUT_L-MPU6050_RA_ACCEL_XOUT_H+1)
+#define REPORT_SIZE		  7
+
+extern uint8_t Report_Acc[REPORT_SIZE],Report_Gyro[REPORT_SIZE];
+extern uint8_t ReportID;
 
 extern int16_t MPU6050_Regs[];
 extern uint8_t MPU6050_State;
+
+enum REPORT_ID
+{
+	ID_Acc = 0x01,
+	ID_Gyro = 0x02
+ };
+
+enum _MOTION_STATES_
+{
+	USB_Idle,
+	USB_Rdy,
+	MPU6050_I2C_Read
+};
 
 enum _SensorIndex
 {
 	RAW_Acc_X,RAW_Acc_Y,RAW_Acc_Z,Raw_Temp,RAW_Gyro_X,RAW_Gyro_Y,RAW_Gyro_Z	
 };
+
+enum _ReportIndex
+{
+	Report_ID = 0x00, Report_X = 0x01, Report_Y = 0x03, Report_Z = 0x05 
+};
+
+#define ACCEL_XY_SCALE	-2L
+#define ACCEL_Z_SCALE		-1L
+#define GYRO_SCALE			-1L
+
+void UpdateReport(uint8_t *Report,uint8_t Index,int32_t Value);
+void Motion_Task(void);
 
 #endif

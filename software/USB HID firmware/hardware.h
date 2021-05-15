@@ -60,8 +60,6 @@ enum _OPT3 { HSITRIM = 0x10, LSI_EN = 0x08, IWDG_HW = 0x04, WWDG_HW = 0x02, WWDG
 #define TIM4_RELOAD			(CPU_CLOCK/(1<<TIM4_PRSC)/TIM4_FREQ)
 #define TIM4_CNTMAX			(TIM4_FREQ/TIM4_Slow)
 
-#define EXTI_CR1				0x30
-
 extern volatile uint8_t TIM4_Update_Flag;
 
 
@@ -74,28 +72,10 @@ extern volatile uint8_t TIM4_Update_Flag;
 
 #define ms_TO_TICKS(X)	((X)/10)
 
-#define REPORT_SIZE		  7
-
-enum REPORT_ID
-{
-	ID_Acc = 0x01,
-	ID_Gyro = 0x02
- };
-
-enum _MOTION_STATES_
-{
-	USB_Idle,
-	USB_Rdy,
-	MPU6050_I2C_Read
-};
-
 enum EndPoint
 {
 	EP0, EP1
 };
-
-extern uint8_t Report_Acc[REPORT_SIZE],Report_Gyro[REPORT_SIZE];
-extern uint8_t ReportID;
 
 void Init_Hardware(void);
 void RESET_CHIP(void);

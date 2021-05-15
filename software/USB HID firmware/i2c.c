@@ -1,5 +1,5 @@
 /** 
-	created: ?May 11, 2021, 8:04:48 AM
+	created: May 11, 2021, 8:04:48 AM
 	modified from ST app note: AN3281 - STM8 8-bit MCUs I2C optimized examples
 
 	*

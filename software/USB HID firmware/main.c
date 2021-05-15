@@ -68,35 +68,7 @@ void main(void)
 	while(1)
 	{
 		USB_loop(); // A "quick" USB loop for processing requests
-
-		if(USB_Tx_Ready(EP1))		
-			switch(MPU6050_State)
-			{
-				case USB_Rdy:
-					Delay(USB_IDLE_DELAY);		// wait until USB packet is done, so it won't interfere with I2C
-					I2C_Read(MPU6050_ADDRESS_AD0_LOW,MPU6050_RA_ACCEL_XOUT_H,(uint8_t*)MPU6050_Regs,MPU6050_REGSIZE);
-					MPU6050_State = MPU6050_I2C_Read;
-					break;
-					
-				case MPU6050_I2C_Read:
-					if (!I2C_Busy(I2C_POLL))
-					{ 
-						MPU6050_Scale();
-						
-						// Alternate sending each of the reports
-						if(ReportID == ID_Acc)
-						{
-							USB_Send_Data(Report_Acc,REPORT_SIZE,EP1);
-							ReportID = ID_Gyro;
-						}
-						else
-						{
-							USB_Send_Data(Report_Gyro,REPORT_SIZE,EP1);
-							ReportID = ID_Acc;
-						}
-						MPU6050_State = USB_Rdy;
-					}
-			}
+		Motion_Task();
 		
 		if (TIM4->SR1 && TIM4_SR1_UIF)	// poll for TIM4 update
 		{ 

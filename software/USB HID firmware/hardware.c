@@ -24,9 +24,6 @@
 #include "hardware.h"
 #include "usb.h"
 
-uint8_t Report_Acc[REPORT_SIZE],Report_Gyro[REPORT_SIZE];
-uint8_t ReportID = ID_Acc;
-
 void Init_Hardware(void)
 {	
 	Check_OPTION_BYTE();

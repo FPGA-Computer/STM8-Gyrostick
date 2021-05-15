@@ -91,7 +91,8 @@ const unsigned char String_Vendor[SIZE_STRING_VENDOR] =
 const uint8_t String_Product[SIZE_STRING_PRODUCT] =
 {
     SIZE_STRING_PRODUCT,USB_DESC_TYPE_STRING,	// bLength,bDescriptorType
-		'G',0,'y',0,'r',0,'o',0,'S',0,'t',0,'i',0,'c',0,'k',0
+		'S',0,'T',0,'M',0,'8',0,' ',0,'G',0,'y',0,'r',0,'o',0,'S',0,
+		't',0,'i',0,'c',0,'k',0
 };
 
 const unsigned char String_Serial[SIZE_STRING_SERIAL] =
